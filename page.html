@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognita</title>
+    <link rel="stylesheet" href="/new/css/new.css">
+    <link rel="icon" href="img/trip-advisor-logo-24 (2).png" alt="my image">
+
+    <!-- Boxicons link here -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <h1><a href="#" class="logo">Cognita</a></h1>
+
+            <!-- Cart Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content"></div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Pay Now</button>
+                <i class='bx bx-x' id="close-cart" ></i>
+            </div>
+        </div>
+    </header>
+    <!-- -------------------------------------------- -->
+    <!-- -------------------------------------------- -->
+    <!-- -------------------------------------------- -->
+    <!-- -------------------------------------------- -->
+    <!-- Responsive side navigation bar -->
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-trip-advisor'></i>
+                <div class="logo_name">Cognita.</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+
+        <ul class="nav_list">
+            <li>
+                
+                <i class='bx bx-search-alt' ></i>
+                    <input type="text" placeholder="Search...">
+                
+
+                <span class="tooltip">Search</span>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+
+                <span class="tooltip">Dashboard</span>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user' ></i>
+                    <span class="links_name">User</span>
+                </a>
+
+                <span class="tooltip">User</span>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Messages</span>
+                </a>
+
+                <span class="tooltip">Messages</span>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2' ></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+
+                <span class="tooltip">Analytics</span>
+
+            </li>
+            <li>
+                <a href="files.html">
+                    <i class='bx bxs-folder-open' ></i>
+                    <span class="links_name">File Manager</span>
+                </a>
+
+                <span class="tooltip">File Manager</span>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cart' ></i>
+                    <span class="links_name">My Courses</span>
+                </a>
+
+                <span class="tooltip">My Courses</span>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-book-heart' ></i>
+                    <span class="links_name">Saved</span>
+                </a>
+
+                <span class="tooltip">Saved</span>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Settings</span>
+                </a>
+
+                <span class="tooltip">Settings</span>
+
+            </li>
+        </ul>
+
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="img/success.png" alt="">
+
+                    <div class="name_job">
+                        <div class="name">
+                            Osborn Nyakaru
+                        </div>
+                        <div class="job">
+                            Web Designer
+                        </div>
+                    </div>
+                </div>
+
+                <i class='bx bx-log-out' id="log_out"></i>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <!-- -------------------------------------------- -->
+    <!-- -------------------------------------------- -->
+    <!-- -------------------------------------------- -->
+    <!-- -------------------------------------------- -->
+
+<!-- Products -->
+<section class="shop container">
+    <!-- <div class="section-title">
+        <h2 class="section-title">Shop Products</h2>
+        <a href="/landing/home.html"></a>
+    </div>
+    
+    <div class="shop-content">
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1cgX1Kv4Wn_mv8d8w2MnCw-lfQO7krYOQSE-630mJ22GU7UzWeMeenYYByBt3sSR_UtnQt2R3K0IlF9ji1KyCpWBNdHoqpv1G7WwBAgkyJ74ZftevpqPFI3ubTqt8pcQIWY8gfBqEUOGaavbisMMFmNsZtibKbkfmA9Alp0RiDeYJh1M/s1600/product1.jpeg" alt="" class="product-img">
+            <h2 class="product-title">ADICOLOR SEASONAL</h2>
+            <span class="price">$50</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3CxTZxrd31kjHFJtpLGGiKFIKg38W_a0xo-HsP2_x_7QYOZoCFDrSeQlxsfs2nlQsBxzIHsKsQXHmP1BLmME2XPgV7uch8SFWr8HYPICaEbmu4y3pB-7ysh2jYucFqnIS-dHCBkvSNmNqKA-W_h0gLq1PE2_B4lznwN15s8wHabKY48I/s1600/product2.jpeg" alt="" class="product-img">
+            <h2 class="product-title">SATURDAY BACKPACK</h2>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwnbGArT2XEj6zJXIUdhOEsijSn3pjK8KWIoZvwp5aw3GHX0L_8h7SC36gl91kDiukokjFhKExFcrLhlwddm8STWG5SfDP_SksYrlF9WYRfRKQSNQT96c5oidDeZWVKHOgJHzHcUaxQeU0DEFqc9MpZyQreoQZa6FpvjOsYArvT-Nd_oc/s1600/product3.jpeg" alt="" class="product-img">
+            <h2 class="product-title">ULTIMATE HAT</h2>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijTzaOx4zKEOWFUeEcPmBuvQuDNjpuUMyr8vRbcq8PKgrLfShXPil9hnkE-DUx6RJYrryAYrDSVeyC7DJAViMk3QAn7M5P9ZXw_Vl4DTu9fsFgEZfgb8GGVFsQCi6Q_r-qh8E2QvkhVC2x4uP06uHIy_-xGM8SLGB19QCG4sXWodr_tVU/s1600/product4.jpeg" alt="" class="product-img">
+            <h2 class="product-title">GOAT TEE</h2>
+            <span class="price">$15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZgwiyM3-m4DyWKc4hEz8_wo1UOQicK7lFRWxe14ceHSuKIFUyFaqHz5PfWrx-47w3DH5xos9iWwAQ0BzBN9_Xk-w_l56Aeq8KkupXvnHsgl0SNVDhtMHi_TlmwTofgbunoDSuv9DGdzyGbYlYRa7NtSV2MdHlRY7ng1v65aspewRzXLI/s1600/product5.jpeg" alt="" class="product-img">
+            <h2 class="product-title">HOODIE </h2>
+            <span class="price">$65.62</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9HDWwS9sR_0K-M3kfcyQ6YLW84TmgQuf5zpW96TRk93COAFZW9eNxwelmbLFjmVOU55yf1o4e2lAEC7kpnUQSgLdstDJ0-Xv7Q_kPpnUzu9HCloRccAEIP7jjyUS8shmxGlBG0kyFvcYZGOP0Ti4bHK5Ewlvh35WXvcI4F2QGsIrbxyk/s1600/product6.jpeg" alt="" class="product-img">
+            <h2 class="product-title">I PODS</h2>
+            <span class="price">$200.05</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaa4gn-RUB1iRDCGIi_20B3J_8TJbVsMc8d1bFeEgb369zbChEdPxOec6sP-LJAHXQxXNd3ZzJjVFGb4J3qvbBhKrFtAGOVCTuB4TsNgdMjwywAFmzzbsMCMu7TB8S-A38IU2nld7E-Fgv7phqrO-bLRgTIkCEgQnfmdaSPIOh-GEQch4/s1600/product7.jpeg" alt="" class="product-img">
+            <h2 class="product-title">METAL BOTTLE</h2>
+            <span class="price">$76.55</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6FhmH4U_U3CqDIU4giNXA6XX5nL9dO_gn8zsD7yUs8Uv_7dGOIqKaz6xz-ZVzJR1mUvizaHWIWyf0MCYIOn0IzFQo7gdcb3BZ8IbXP-GifiX24dhpn1xNHDcDhVRaFgjlUj8gks-EbBkcG4g9W7OQn4LTie9aYjzj6K7e5Gmx1ign95HuKRJAP7tA3IOU/s320/product8.jpeg" alt="" class="product-img">
+            <h2 class="product-title">TRAVIS SHOES</h2>
+            <span class="price">$280</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div> -->
+</section>
+    <script src="js/script.js"></script>
+</body>
+</html>

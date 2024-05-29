@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognita</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="icon" href="img/trip-advisor-logo-24 (2).png" alt="my image">
+
+    <!-- Boxicons link here -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <h1><a href="#" class="logo">Cognita</a></h1>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+    
+                <span class="active-nav"></span>
+                <span class="animate" style="--i:2;"></span>
+            </nav>
+            <!-- Cart Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content"></div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Pay Now</button>
+                <i class='bx bx-x' id="close-cart" ></i>
+            </div>
+        </div>
+    </header>
+
+<!-- Products -->
+<section class="shop container">
+    <div class="shop-content">
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyhF1dFih2VcUOWbTANun_VeRaR49WnXD3TiKx-i2fE538CtBBMitr6hMvAo-ZnbTIBpnsuR0j9qXEkqPTPzTVQ45mmzxRd7g063CYo75rmgEdHCTsIB9NMyoZ5wAK9lYn6OzkuhbkdDqqTeITf5MwW5E2CfS7DjqGge6fKsKzXEFLTt3YBChIxQBsZxIr/s320/content.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Digital Content Creation</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW3tH2C-Qk6knnmW7J9aKE287tNUojWKlTF2QKbBbgu_CeuwTdYJ-Ru9DtuKxPtTmo1SfrGGttVCOK3a3zfjNs7xgn_TMqZUghn1VfsrDhlVdNUz0fjLTu1kdMV9283tnTJn31X422t2z6rX8vUqfgxmBJpYEu9a2PDNKM23YvoclhnWdRJd_jHoqgJng2/s320/cs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">INTRODUCTION TO COMPUTER SCIENCE</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$ 70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMxVDjepZ3ECvD-xOLr6seuUrvgoAfzgTIUyqRZfwU9SCPqJ7zu2Nwz407bGM5rfi16AR3mZgW6rOeBiYoSJEdBHovAQPsf8I6khD3O15zbOnD8X_FSTW4K-iLLOufYJgJfPwxL9Aqh8xwjUpSjbWjPSCxVuJbsHouN8rjteX2ONEWpBYZNnT8jM8FSknI/s320/html.jpeg" alt="" class="product-img">
+            <h2 class="product-title">HTML5, CSS3 & JS </h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$ 14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk0L9fy-dX_KaU2u1YSowTjaERY1AN4XvaugZZ9ClPSrT6KMe-lhxxHZuUWIIT0D20CUiXuHdBRUpC_E0_kPRdJfl_TafGCLw_5WBcMphOfA2MjPvRWFaX7ZA8lLkzio_h4xumEtKVSiPmZ3ZZsmT0D3Gtd6ZPB28hSWjP9kTebO2fY-58-An8biJW6eis/s320/pythonandjs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">WEB PROGRAMMING WITH PYTHON & JS</h2>
+            <p>Delve deeper into the core languages of Python and Javascript in Web Programming and Development</p> <br><br>
+            <span class="price">$ 15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ1sTmgjW0RFaaCGjC_EMmJFa17V_47fqiJ3z5pXzl2JrhFwrHib47VUvTxVudcXdYc9T3Uls5dW40-usBJEpy71zhYbnbnLdDGKQdvpEQJamClqEhmq_Z_H0TqQI4V4k3kAyjuSA2nD4qRHvkaqC0VYAmkVbVaQOOO36ZKDRnf9-wbBZxyoZBHH1R3me7/s320/social.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Social Media Management</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoM1YYxgcjccekkrbJEyNBjwrtSwR29arzoz3AQ7ONN1KIQUm-RZQ7k-EPdrgdcnHmKFwqPDswq6z623lwVVTdLZnkzlON-ArwHcvlbudTxjHwcFl08R30j_S1v7adnyKqRmxqTZSqcUAA31Zlp1uOcYj7ngYGye6aIjE0-ASXgFSQ2xrjgaG7L9w3fxpz/s320/web.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Web & Software Development</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGXdGyAhpJQ5XvKW1qBJ6UyQvDloTVfjUJJucL2v1lPMDBm30w6vf6cqvf_a524EsBlfajPtlvRbhAdmcf8REOgwptTy3qsPvO92aHQ6p3YSm_AU9I-SSSE832UNZu0O3L6oEx0VY1pO8W8p2EBN80ey-W46m3hci6Iz6CP3ibcbEIKF1wY7F6GJI7AkUp/s320/aiwithpython.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Artificial Intelligence with Python</h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK0l-wMO9LlUYwBwcApJiCoWciG0z_TfgO1Q8mu-voHCzPpJGoNUWNvAQXyRTsFORHUFQLhBKxXM6UIPZGKLUFJKRvvHS_PDQ1800n8ED4d0vAfG5i9jzcH9eN6Lf228MO9_qYMD01BVmPkZFDCzhixDp1grv8QGyEltCbp9MR8zNJyBMw_zmTYG-3jvkt/s320/animation.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Anime & Cartoon Development</h2>
+            <p>Delve deeper into the core languages of Python and Javascript in Web Programming and Development</p> <br><br>
+            <span class="price">$15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu7qCsZGPqVTQuleJZbnVhGZU6HX1djRy7jO4w55e6gVxpwgL3oqQe47cYdRFZ4D8EJkNcdskxF6HlV6xn4WKZZsoWK-YQXwFGTMOjGYL57pN8tJ0cEohv1TkRK-VMmd1Fi1jm2DqQBflMk9iNrwZTwNhxCo2Z5igmnpYm21YbnwHEgQwlx5m7llQAeY5h/s320/art.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Digital Art & Aesthetics</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-bwTsZ3B8jRta6_GdcfRD73e5Hw48HU7aKQe1bWInL_vFgN0UL4BD9DdRMwtR9YM_gegPhia00VFF2A-_Rcaj_umGz7ZtUZ6_fjYvMKGxsGpkUOSAPn47faZzaJb4gRc-0rpKtQlFeDY3Ri3GYqlj3uamA7NkTL4Zk9jGpGJ03ZlllVJ0Br28F5NL3at2/s320/cloud.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Introduction to Cloud Computing</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBoiovR9zmAC_8keDkRsZ-dyuF9Gm8ptdkSd0MmZUIS7FjyheMY-Gu_EPzTPc082Pmxoa6QYgqDggXOkuAmjIfeJ-vk6HA3HrdtxdmyI_x-mSxR6GO_ACmIfP5nSe8Z_CeCPlYHnAj_VyHoBb0KryCOLBJvGApDEozO8glKpWz7HgUao3ut7m1G5pXHZXk/s320/game.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Game Development Fundamentals</h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMNgyseLcxeUm9hmrg2dBzshCZEDJZIC0UeLhZ2WufaB1DgdNibZY-xqVF092sY6PbomUda9JGS_C7LtNveRucxhd-pYy5aaa28vpmrDIr_pLXhZNTEa4G-1qCnlkZHgNu7ISLmArOpEHsdvE4-BxakIv32gSMBYmYfv-672nqq05eReEyXNOy5k1bIbXK/s320/java.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Object Oriented Programming - JAVA</h2>
+            <p>Delve deeper into the core languages of Python and Javascript in Web Programming and Development</p> <br><br>
+            <span class="price">$15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-yF9nOAQiqzhpzo-C7E7z37zABW-MH0d9stvEOYoBWu16sLTfIAMj6Kp4j5uCSy_hXj6SPg4No3e2cn0E6qbfcDPqv-njWV2uAHZGAut9vSA7bKBKodeqg7-mN8wcNl6PoiiEWkwj0b_dEER9OWPyzcOLaiw-vsco2OF9Lmb2yS_V92Lk3zhKQhz0Gk6N/s320/graphic.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Graphic Design</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc2IfiaLFh0OGtSi1o9p3nguHhXsC_gvZqS5Mc65l0-ZvfWj7ETyT0uHPp1GbvTSMJvkW6yb9VO5et23FW037fKRQBUjNe3ObAn78dR1ju_1_weeGoB0qvIoyQpFfULlQhUewhR91XGo9KJ-0FnjWNzTevYObfQNzhW5ToWnKsrWmvtZDfdB_S6mLfiWXf/s320/machinel.jpeg" alt="" class="product-img">
+            <h2 class="product-title">DATA SCIENCE: Machine Learning</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhljMLrT3Wx0Pw0-IxJ2zWqnitqBH1qi9LA8C0XFI2caGathLp9lK0HEO7pN7Uj-TQ0w7YqSjRIyZkA_SRf2fFGbjdvAb07vpHsIITfbDrO-rU01JZTaDOnYBPVJ7GeXNM-h3ZvzCLkOZDDlScfosFMJCuel6Ipi0tl0tS_9cEVtrzY_XGbeRbU_PXxItg5/s320/new.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Data Structures & Algorithms</h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk0L9fy-dX_KaU2u1YSowTjaERY1AN4XvaugZZ9ClPSrT6KMe-lhxxHZuUWIIT0D20CUiXuHdBRUpC_E0_kPRdJfl_TafGCLw_5WBcMphOfA2MjPvRWFaX7ZA8lLkzio_h4xumEtKVSiPmZ3ZZsmT0D3Gtd6ZPB28hSWjP9kTebO2fY-58-An8biJW6eis/s320/pythonandjs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">C++ Programming Fundamentals</h2>
+            <p>Delve deeper into the core languages of Python and Javascript in Web Programming and Development</p> <br><br>
+            <span class="price">$15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyhF1dFih2VcUOWbTANun_VeRaR49WnXD3TiKx-i2fE538CtBBMitr6hMvAo-ZnbTIBpnsuR0j9qXEkqPTPzTVQ45mmzxRd7g063CYo75rmgEdHCTsIB9NMyoZ5wAK9lYn6OzkuhbkdDqqTeITf5MwW5E2CfS7DjqGge6fKsKzXEFLTt3YBChIxQBsZxIr/s320/content.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Graphic Design</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW3tH2C-Qk6knnmW7J9aKE287tNUojWKlTF2QKbBbgu_CeuwTdYJ-Ru9DtuKxPtTmo1SfrGGttVCOK3a3zfjNs7xgn_TMqZUghn1VfsrDhlVdNUz0fjLTu1kdMV9283tnTJn31X422t2z6rX8vUqfgxmBJpYEu9a2PDNKM23YvoclhnWdRJd_jHoqgJng2/s320/cs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">INTRODUCTION TO COMPUTER SCIENCE</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMxVDjepZ3ECvD-xOLr6seuUrvgoAfzgTIUyqRZfwU9SCPqJ7zu2Nwz407bGM5rfi16AR3mZgW6rOeBiYoSJEdBHovAQPsf8I6khD3O15zbOnD8X_FSTW4K-iLLOufYJgJfPwxL9Aqh8xwjUpSjbWjPSCxVuJbsHouN8rjteX2ONEWpBYZNnT8jM8FSknI/s320/html.jpeg" alt="" class="product-img">
+            <h2 class="product-title">HTML5, CSS3 & JS </h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk0L9fy-dX_KaU2u1YSowTjaERY1AN4XvaugZZ9ClPSrT6KMe-lhxxHZuUWIIT0D20CUiXuHdBRUpC_E0_kPRdJfl_TafGCLw_5WBcMphOfA2MjPvRWFaX7ZA8lLkzio_h4xumEtKVSiPmZ3ZZsmT0D3Gtd6ZPB28hSWjP9kTebO2fY-58-An8biJW6eis/s320/pythonandjs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">WEB PROGRAMMING WITH PYTHON & JS</h2>
+            <p>Delve deeper into the core languages of Python and Javascript in Web Programming and Development</p> <br><br>
+            <span class="price">$15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyhF1dFih2VcUOWbTANun_VeRaR49WnXD3TiKx-i2fE538CtBBMitr6hMvAo-ZnbTIBpnsuR0j9qXEkqPTPzTVQ45mmzxRd7g063CYo75rmgEdHCTsIB9NMyoZ5wAK9lYn6OzkuhbkdDqqTeITf5MwW5E2CfS7DjqGge6fKsKzXEFLTt3YBChIxQBsZxIr/s320/content.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Graphic Design</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW3tH2C-Qk6knnmW7J9aKE287tNUojWKlTF2QKbBbgu_CeuwTdYJ-Ru9DtuKxPtTmo1SfrGGttVCOK3a3zfjNs7xgn_TMqZUghn1VfsrDhlVdNUz0fjLTu1kdMV9283tnTJn31X422t2z6rX8vUqfgxmBJpYEu9a2PDNKM23YvoclhnWdRJd_jHoqgJng2/s320/cs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">INTRODUCTION TO COMPUTER SCIENCE</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMxVDjepZ3ECvD-xOLr6seuUrvgoAfzgTIUyqRZfwU9SCPqJ7zu2Nwz407bGM5rfi16AR3mZgW6rOeBiYoSJEdBHovAQPsf8I6khD3O15zbOnD8X_FSTW4K-iLLOufYJgJfPwxL9Aqh8xwjUpSjbWjPSCxVuJbsHouN8rjteX2ONEWpBYZNnT8jM8FSknI/s320/html.jpeg" alt="" class="product-img">
+            <h2 class="product-title">HTML5, CSS3 & JS </h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk0L9fy-dX_KaU2u1YSowTjaERY1AN4XvaugZZ9ClPSrT6KMe-lhxxHZuUWIIT0D20CUiXuHdBRUpC_E0_kPRdJfl_TafGCLw_5WBcMphOfA2MjPvRWFaX7ZA8lLkzio_h4xumEtKVSiPmZ3ZZsmT0D3Gtd6ZPB28hSWjP9kTebO2fY-58-An8biJW6eis/s320/pythonandjs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">WEB PROGRAMMING WITH PYTHON & JS</h2>
+            <p>Delve deeper into the core languages of Python and Javascript in Web Programming and Development</p> <br><br>
+            <span class="price">$15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyhF1dFih2VcUOWbTANun_VeRaR49WnXD3TiKx-i2fE538CtBBMitr6hMvAo-ZnbTIBpnsuR0j9qXEkqPTPzTVQ45mmzxRd7g063CYo75rmgEdHCTsIB9NMyoZ5wAK9lYn6OzkuhbkdDqqTeITf5MwW5E2CfS7DjqGge6fKsKzXEFLTt3YBChIxQBsZxIr/s320/content.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Graphic Design</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW3tH2C-Qk6knnmW7J9aKE287tNUojWKlTF2QKbBbgu_CeuwTdYJ-Ru9DtuKxPtTmo1SfrGGttVCOK3a3zfjNs7xgn_TMqZUghn1VfsrDhlVdNUz0fjLTu1kdMV9283tnTJn31X422t2z6rX8vUqfgxmBJpYEu9a2PDNKM23YvoclhnWdRJd_jHoqgJng2/s320/cs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">INTRODUCTION TO COMPUTER SCIENCE</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMxVDjepZ3ECvD-xOLr6seuUrvgoAfzgTIUyqRZfwU9SCPqJ7zu2Nwz407bGM5rfi16AR3mZgW6rOeBiYoSJEdBHovAQPsf8I6khD3O15zbOnD8X_FSTW4K-iLLOufYJgJfPwxL9Aqh8xwjUpSjbWjPSCxVuJbsHouN8rjteX2ONEWpBYZNnT8jM8FSknI/s320/html.jpeg" alt="" class="product-img">
+            <h2 class="product-title">HTML5, CSS3 & JS </h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk0L9fy-dX_KaU2u1YSowTjaERY1AN4XvaugZZ9ClPSrT6KMe-lhxxHZuUWIIT0D20CUiXuHdBRUpC_E0_kPRdJfl_TafGCLw_5WBcMphOfA2MjPvRWFaX7ZA8lLkzio_h4xumEtKVSiPmZ3ZZsmT0D3Gtd6ZPB28hSWjP9kTebO2fY-58-An8biJW6eis/s320/pythonandjs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">WEB PROGRAMMING WITH PYTHON & JS</h2>
+            <p>Delve deeper into the core languages of Python and Javascript in Web Programming and Development</p> <br><br>
+            <span class="price">$15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div><div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyhF1dFih2VcUOWbTANun_VeRaR49WnXD3TiKx-i2fE538CtBBMitr6hMvAo-ZnbTIBpnsuR0j9qXEkqPTPzTVQ45mmzxRd7g063CYo75rmgEdHCTsIB9NMyoZ5wAK9lYn6OzkuhbkdDqqTeITf5MwW5E2CfS7DjqGge6fKsKzXEFLTt3YBChIxQBsZxIr/s320/content.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Graphic Design</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW3tH2C-Qk6knnmW7J9aKE287tNUojWKlTF2QKbBbgu_CeuwTdYJ-Ru9DtuKxPtTmo1SfrGGttVCOK3a3zfjNs7xgn_TMqZUghn1VfsrDhlVdNUz0fjLTu1kdMV9283tnTJn31X422t2z6rX8vUqfgxmBJpYEu9a2PDNKM23YvoclhnWdRJd_jHoqgJng2/s320/cs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">INTRODUCTION TO COMPUTER SCIENCE</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMxVDjepZ3ECvD-xOLr6seuUrvgoAfzgTIUyqRZfwU9SCPqJ7zu2Nwz407bGM5rfi16AR3mZgW6rOeBiYoSJEdBHovAQPsf8I6khD3O15zbOnD8X_FSTW4K-iLLOufYJgJfPwxL9Aqh8xwjUpSjbWjPSCxVuJbsHouN8rjteX2ONEWpBYZNnT8jM8FSknI/s320/html.jpeg" alt="" class="product-img">
+            <h2 class="product-title">HTML5, CSS3 & JS </h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk0L9fy-dX_KaU2u1YSowTjaERY1AN4XvaugZZ9ClPSrT6KMe-lhxxHZuUWIIT0D20CUiXuHdBRUpC_E0_kPRdJfl_TafGCLw_5WBcMphOfA2MjPvRWFaX7ZA8lLkzio_h4xumEtKVSiPmZ3ZZsmT0D3Gtd6ZPB28hSWjP9kTebO2fY-58-An8biJW6eis/s320/pythonandjs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">WEB PROGRAMMING WITH PYTHON & JS</h2>
+            <p>Delve deeper into the core languages of Python and Javascript in Web Programming and Development</p> <br><br>
+            <span class="price">$15.44</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div><div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyhF1dFih2VcUOWbTANun_VeRaR49WnXD3TiKx-i2fE538CtBBMitr6hMvAo-ZnbTIBpnsuR0j9qXEkqPTPzTVQ45mmzxRd7g063CYo75rmgEdHCTsIB9NMyoZ5wAK9lYn6OzkuhbkdDqqTeITf5MwW5E2CfS7DjqGge6fKsKzXEFLTt3YBChIxQBsZxIr/s320/content.jpeg" alt="" class="product-img">
+            <h2 class="product-title">Graphic Design</h2>
+            <p>A graphic design course that allows students to learn how create effective and aesthetically pleasing designs applications like Adobe Photoshop and Illustrator</p> <br>
+            <span class="price">$ 587</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW3tH2C-Qk6knnmW7J9aKE287tNUojWKlTF2QKbBbgu_CeuwTdYJ-Ru9DtuKxPtTmo1SfrGGttVCOK3a3zfjNs7xgn_TMqZUghn1VfsrDhlVdNUz0fjLTu1kdMV9283tnTJn31X422t2z6rX8vUqfgxmBJpYEu9a2PDNKM23YvoclhnWdRJd_jHoqgJng2/s320/cs.jpeg" alt="" class="product-img">
+            <h2 class="product-title">INTRODUCTION TO COMPUTER SCIENCE</h2>
+            <p>Begin your Computer Science journey right here</p> <br> <br>
+            <span class="price">$70.56</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMxVDjepZ3ECvD-xOLr6seuUrvgoAfzgTIUyqRZfwU9SCPqJ7zu2Nwz407bGM5rfi16AR3mZgW6rOeBiYoSJEdBHovAQPsf8I6khD3O15zbOnD8X_FSTW4K-iLLOufYJgJfPwxL9Aqh8xwjUpSjbWjPSCxVuJbsHouN8rjteX2ONEWpBYZNnT8jM8FSknI/s320/html.jpeg" alt="" class="product-img">
+            <h2 class="product-title">HTML5, CSS3 & JS </h2>
+            <p>Together, these technologies enable the creation of well-structured, visually appealing, and interactive websites.</p>
+            <span class="price">$14.01</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+</section>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
